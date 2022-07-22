@@ -1,0 +1,61 @@
+body {
+    background-color: #eee;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header p {
+    margin: 0px 10% 1em 10%;
+}
+
+#symbolOutputContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5% 20%;
+    grid-template-areas: "score . timer"
+                         " . outImg . ";
+    justify-content: space-evenly;
+}
+
+#symbolOutputContainer img {
+    grid-area: outImg;
+    width: 100%;
+    max-width: 300px;
+    border:  5px solid #a87d53;
+    justify-self: center;
+
+}
+
+#symbolOutputContainer section {
+    justify-self: center;
+}
+
+#scoreContainer {
+    grid-area: score;
+}
+
+#timerContainer {
+    grid-area: timer;
+}
+
+#buttonsOutputContainer {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: .5em;
+    grid-column-gap: .5em;
+
+    justify-content: center;
+    margin-top: 3%;
+}
+
+footer p{
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+

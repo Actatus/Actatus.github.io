@@ -1,0 +1,143 @@
+/* To-Do:
+    Revise to use vh and vw, reducing desktop display to 1 page. 
+    Solidify color scheme, improve page visuals.
+*/
+
+
+body {
+    background-color: #eee;
+}
+
+header {
+    text-align: center;
+}
+
+#searchInputContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 1px;
+    height: 2em;
+
+}
+
+#searchInputContainer input {
+    flex-grow: .5;
+    border: 1px solid;
+    border-radius: 25px 0 0 25px;
+    padding-left: 1%;
+}
+
+#searchButton {
+    border-radius: 0 25px 25px 0;
+    border: 1px solid;
+}
+
+.mainOutputContainer{
+    width: 100%;
+    height: 25%;
+    margin-top: 5%;
+}
+
+.mainOutputContainer a {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    clear: right;
+    text-decoration: none;
+
+}
+
+.mainOutputContainer a img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 700px;
+}
+
+#searchOutputContainer > h3 {
+    text-align: center;
+}
+
+.alternateOutputContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-top: 5%;
+}
+
+
+
+.alternateOutputContainer::before{
+    clear: left;
+}
+
+.alternateOutputContainer section a {
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.alternateOutputContainer section a:hover {
+    text-decoration: underline;
+}
+
+.alternateOutputContainer section a img {
+    height: auto;
+    width: auto;
+    max-width: 125px;
+    margin-right: 5%;
+}
+
+.alternateOutputContainer section a h3 {
+    margin: auto 0 auto 0;
+}
+
+.alternatingRow {
+    background-color: #ddd;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .mainOutputContainer a:hover {
+        text-decoration: underline;
+    }
+
+    .mainOutputContainer a img {
+        width: auto;
+        height: auto;
+
+    }
+
+    .alternateOutputContainer {
+        flex: 0 0 20%;
+        flex-direction: row;
+        justify-content: space-evenly;    
+        column-gap: 2%;   
+    }
+
+    .alternateOutputContainer section {
+        flex-basis: 20%;
+        padding-top: 1%;
+    }
+
+    .alternateOutputContainer section a {
+        flex-direction: column;
+         margin: auto;
+    }
+
+    .alternateOutputContainer section a img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .alternateOutputContainer section a h3 {
+        text-align: center;
+    }
+
+}
