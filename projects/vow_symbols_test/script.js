@@ -1,6 +1,5 @@
 /*
  To-Do:
-            Add alt text to symbols for accessibilty
             Improve CSS styling
             Create better mobile styling.
             Clean up/refactor JS. Sort functions for readability.
